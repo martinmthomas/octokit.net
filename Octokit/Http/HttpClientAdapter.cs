@@ -52,7 +52,7 @@ namespace Octokit.Internal
             }
 #endif
 
-            _http = new HttpClient(new RedirectHandler { InnerHandler = getHandler() });
+            _http = new HttpClient();
         }
 
         /// <summary>
